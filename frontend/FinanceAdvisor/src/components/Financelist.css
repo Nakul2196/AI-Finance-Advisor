@@ -1,0 +1,68 @@
+.list--header {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .list--header h2 {
+    color: #f5f5f5; /* Light text for contrast */
+    margin: 0;
+    font-size: 1.5rem; /* Larger font size for emphasis */
+    font-weight: 600; /* Bold for hierarchy */
+  }
+  
+  .list--container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .list {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background: #2a2a2a; /* Dark background for list items */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border: 1px solid #444; /* Subtle border */
+  }
+  
+  .list:hover {
+    background-color: #3a3a3a; /* Slightly lighter background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    cursor: pointer;
+  }
+  
+  .stock--details {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    align-items: center;
+    color: #fca311; /* Accent color for stock details */
+    padding: 10px;
+    justify-content: space-between;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .stock--details h2 {
+    font-size: 1.1rem; /* Slightly larger font size */
+    color: #f5f5f5; /* Light text for contrast */
+    margin: 0;
+    font-weight: 500; /* Medium font weight */
+  }
+  
+  .list span {
+    flex: 1; /* Distribute space equally for price, change, and market cap */
+    font-size: 1rem; /* Consistent font size */
+    color: #888; /* Subtle text color */
+    text-align: center; /* Center-align the text */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .list:hover .stock--details,
+  .list:hover span {
+    color: #f5f5f5; /* Light text on hover for better contrast */
+  }

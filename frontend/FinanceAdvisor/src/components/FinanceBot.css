@@ -1,0 +1,106 @@
+.finance-bot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  background: #1e1e1e; /* Dark background for consistency */
+  border-radius: 12px;
+  width: calc(100% - 40px); /* Adjusted width for padding */
+  margin: auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+.finance-bot-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f5f5f5; /* Light text for contrast */
+  margin-bottom: 20px;
+}
+
+.finance-bot-chatbox {
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px;
+  background: #2a2a2a; /* Darker chatbox background */
+  border-radius: 10px;
+  border: 1px solid #333; /* Subtle border */
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.finance-bot-message {
+  max-width: 75%;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.finance-bot-message.user {
+  background: #007bff; /* Blue for user messages */
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+}
+
+.finance-bot-message.bot {
+  background: #444; /* Dark gray for bot messages */
+  color: #f5f5f5;
+  align-self: flex-start;
+  border-bottom-left-radius: 5px;
+}
+
+.finance-bot-inputbox {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid #444; /* Subtle border */
+  padding: 10px;
+  background: #2a2a2a; /* Dark input box */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.finance-bot-textarea {
+  flex-grow: 1;
+  padding: 12px;
+  border: none;
+  font-size: 1rem;
+  resize: none;
+  width: 100%;
+  min-height: 45px;
+  outline: none;
+  background: transparent; /* Transparent background */
+  color: #f5f5f5; /* Light text */
+}
+
+.finance-bot-textarea:focus {
+  border-color: #007bff; /* Accent color on focus */
+}
+
+.finance-bot-button {
+  background-color: #007bff; /* Blue button */
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.finance-bot-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.finance-bot-button:disabled {
+  background-color: #555; /* Gray when disabled */
+  cursor: not-allowed;
+}

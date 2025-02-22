@@ -1,0 +1,56 @@
+.menu {
+  height: 100vh;
+  width: 250px;
+  background-color: #1a1a1a; /* Darker shade for contrast */
+  flex-direction: column;
+  display: flex;
+  position: fixed;
+  padding: 20px;
+  gap: 2rem;
+  overflow-y: auto;
+  border-right: 1px solid #333; /* Subtle border */
+  margin: 0;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px;
+  color: #f5f5f5; /* Light gray for better readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 30px;
+  color: #007bff; /* Accent color */
+}
+
+.menu--list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Reduced gap for compactness */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu--list .item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-weight: 500; /* Slightly lighter font weight */
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: #f5f5f5;
+}
+
+.menu--list .item:hover,
+.menu--list .item.active {
+  background-color: #27374d; /* Subtle hover/active state */
+  color: #ffffff;
+}
